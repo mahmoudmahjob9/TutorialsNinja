@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browserName" value="chrome-headless"/>
+    <test  name="Validate Hover on menu">
+        <classes>
+            <class name="Testcases.TC06_HoverOnMenu" >
+                <methods>
+                    <include name="Hoveronmenu"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Validate Select cataegory">
+        <classes>
+            <class name="Testcases.TC07_ChangeCategory" >
+                <methods>
+                    <include name="Chossecategory"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Validate shopping cart">
+        <classes>
+            <class name="Testcases.TC08_AddCart" >
+                <methods>
+                    <include name="addcart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Vlaidate wish list">
+        <classes>
+            <class name="Testcases.TC09_WishList" >
+                <methods>
+                    <include name="wishlist"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Vlaidate compare list">
+        <classes>
+            <class name="Testcases.TC10_Comparelist" >
+                <methods>
+                    <include name="compareList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

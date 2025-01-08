@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browserName" value=""/>
+
+    <!--    <test  name="Validate Register">-->
+<!--        <classes>-->
+<!--            <class name="Testcases.TC01_Register" >-->
+<!--                <methods>-->
+<!--                    <include name="registerWithValidData_p"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test  name="Validate compare list">
+        <classes>
+            <class name="Testcases.TC10_Comparelist" >
+                <methods>
+                    <include name="compareList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Validate checkout">
+        <classes>
+            <class name="Testcases.TC11_Checkout" >
+                <methods>
+                    <include name="checkout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

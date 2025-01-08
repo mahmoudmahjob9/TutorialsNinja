@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browserName" value=""/>
+    <test  name="Validate Register">
+        <classes>
+            <class name="Testcases.TC01_Register" >
+                <methods>
+                    <include name="registerWithValidData_p"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Validate Login">
+        <parameter name="browserName" value="chrome-headless"/>
+        <classes>
+            <class name="Testcases.TC02_Login" >
+                <methods>
+                    <include name="login"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Validate forget password">
+        <classes>
+            <class name="Testcases.TC03_ChangPassword" >
+                <methods>
+                    <include name="changePassword"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Validate search">
+        <classes>
+            <class name="Testcases.TC04_Search" >
+                <methods>
+                    <include name="Searchbyword"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Validate Change currency">
+        <classes>
+            <class name="Testcases.TC05_Changecurrency" >
+                <methods>
+                    <include name="ChosseCurrency"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

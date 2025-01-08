@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<suite name="All Test Suite">-->
+    <suite name="All Test Suite" parallel="tests" thread-count="3">
+
+    <parameter name="browserName" value=""/>
+    <suite-files>
+        <suite-file path="Sprint_1.xml"/>
+        <suite-file path="Sprint_2.xml"/>
+        <suite-file path="Sprint_3.xml"/>
+
+
+    </suite-files>
+</suite>
