@@ -27,6 +27,7 @@ public class Utility {
 
 
     private static final SecureRandom random = new SecureRandom();// Excluding the prefix
+
     //generate Random name
     public static String generateRandomName(int n) {
         if (n <= 0 || n > NAME_LENGTH) {
@@ -51,7 +52,7 @@ public class Utility {
         return sb.toString();
     }
 
-   // generate Random Saudi Number
+    // generate Random Saudi Number
     public static String generateRandomSaudiNumber() {
         Random random = new Random();
 
@@ -71,7 +72,7 @@ public class Utility {
         return "+966" + generateRandomSaudiNumber().substring(1); //remove the leading zero after adding country code
     }
 
-  // genetate random Email
+    // genetate random Email
     public static String generateRandomEmail() {
         Random random = new Random();
 
@@ -83,7 +84,7 @@ public class Utility {
         }
         String domain = DOMAINS[random.nextInt(DOMAINS.length)];
 
-        return   username.toString() + "@" + domain;
+        return username.toString() + "@" + domain;
     }
 
 
